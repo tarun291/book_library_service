@@ -37,4 +37,15 @@ class BookRepo {
             console.log(error)
         }
     }
+    async getBookById(id) {
+        try {
+            const book = await Book.findById(id);
+            return id;
+        } catch (error) {
+            console.log('Something went wrong int repo layer')
+            console.log(error)
+        }
+    }
 }
+
+export default BookRepo;
