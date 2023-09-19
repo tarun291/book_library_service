@@ -40,7 +40,7 @@ class BookRepo {
     async getBookById(id) {
         try {
             const book = await Book.findById(id);
-            return id;
+            return book;
         } catch (error) {
             console.log('Something went wrong int repo layer')
             console.log(error)
