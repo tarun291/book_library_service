@@ -4,6 +4,7 @@ class BookRepo {
     async create(data) {
         try {
             const newBook = await Book.create(data);
+            return newBook;
         } catch (error) {
             console.log('Something went wrong int repo layer')
             console.log(error)
@@ -12,6 +13,7 @@ class BookRepo {
     async destroy(id) {
         try {
             const book = await Book.findByIdAndRemove(id);
+            return book;
         } catch (error) {
             console.log('Something went wrong int repo layer')
             console.log(error)
