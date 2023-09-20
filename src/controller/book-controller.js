@@ -1,5 +1,5 @@
 import BookServise from "../services/book-service.js";
-import { statusCodes } from 'http-status-codes'
+import  statusCodes  from 'http-status-codes'
 const bookService = new BookServise;
 
 export const createBook = async (req, res) => {
