@@ -1,4 +1,4 @@
-import Book from "../models/book";
+import Book from "../models/book.js";
 
 class BookRepo {
     async create(data) {

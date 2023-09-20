@@ -1,4 +1,4 @@
-import BookRepo from "../repository/book-repo";
+import BookRepo from "../repository/book-repo.js";
 
 class BookServise {
     constructor() {

@@ -1,4 +1,4 @@
-import BookServise from "../services/book-service";
+import BookServise from "../services/book-service.js";
 import { statusCodes } from 'http-status-codes'
 const bookService = new BookServise;
 
